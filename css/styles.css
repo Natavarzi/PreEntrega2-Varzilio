@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b4dfb3;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header{
+    background-color: #d9cf85;
+    display: none;
+    text-decoration: overline none;
+    
+   
+}
+main{
+    background-color:#d9cf85;
+    text-align: center;
+}
+h1{
+    color:black;
+    text-align: center;
+    font-size:xx-large;
+    background-color: #d9cf85;
+    padding: 20px;
+    
+
+}
+h2{
+    background-color: rgb(40, 130, 182);
+    color: rgb(253, 255, 240);
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    background-color: rgb(203, 205, 56);
+}
+h4{
+    background-color:rgb(194, 235, 111) ;
+    text-align: center;
+}
+div a {
+    text-decoration:overline none;
+}
+p{
+    background-color:#a6c88c;
+    text-align: center;
+}
+.p1{
+    background-color: #66b6ab;
+
+}
+.p2{
+    background-color: blueviolet;
+}
+
+.imagenUno{
+    background-image: url(../img/perrito.jpeg);
+    height: 400px;
+    width: 400px;
+    margin:50px;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+/*estilos del contenedor padre, flex*/
+.contenedor{
+    background-color:#69d0b3;
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    background-image: linear-gradient(#7bbda1);
+}
+/*estilos de los hijos herencia flex*/
+
+.hijos{
+    background-color:#d9cf85;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 50px;
+    height: 150px;
+    width: 150px;
+    gap: 25px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    border:solid;
+    padding: 2rem;
+    text-decoration:none;
+    border-radius: 20px;
+    transform: translate(20px , 30px);
+    box-shadow: 1px 2px 1px 2px black;
+    text-shadow: 1px 2px 1px 2px black;
+    
+}
+/* propiedades del contenedor-dos, grid*/
+
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+    "p img"
+    "h2 img"
+    "p-uno img"
+    "boton img";
+    justify-content: center;
+}
+
+/*estilos de hijos grid*/
+main p{
+    grid-area: p;
+}
+main h2{
+    grid-area: h2;
+}
+main .p-uno{
+    grid-area: p-uno;
+}
+main .boton{
+    grid-area: boton;
+}
+main img{
+    grid-area: img;
+}
+
+/*estilos contenedor,header-dos*/
+
+.contenedor-dos .header-dos{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+.padre{
+    display: flex;
+    justify-items: center;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 30px;
+    
+}
+
+/* estilos generales*/
+
+/* mq home*/
+
+@media screen and (min-width:800px){
+   header{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+   }
+    
+}
+
+
+
+
+
+
